@@ -1,0 +1,89 @@
+{
+    "name": "Cellphone",
+    "plural": "cellphones",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "id": {
+            "type": "string",
+            "required": true
+        },
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "manufacturerCompany": {
+            "type": "string",
+            "required": true
+        },
+        "screen": {
+            "type": "string",
+            "required": true
+        },
+        "os": {
+            "type": "string",
+            "required": true
+        },
+        "ram": {
+            "type": "string",
+            "required": true
+        },
+        "storage": {
+            "type": "string",
+            "required": true
+        },
+        "processor": {
+            "type": "string",
+            "required": true
+        },
+        "cameraCharacteristics": {
+            "type": "string",
+            "required": true
+        },
+        "quantityCamera": {
+            "type": "string",
+            "required": true
+        },
+        "battery": {
+            "type": "string",
+            "required": true
+        },
+        "weight": {
+            "type": "string",
+            "required": true
+        },
+        "price": {
+            "type": "string",
+            "required": true
+        },
+        "sound": {
+            "type": "string",
+            "required": true
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [{
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$unauthenticated",
+            "permission": "ALLOW"
+        },
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "DENY"
+        },
+        {
+            "accessType": "READ",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW"
+        }
+    ],
+    "methods": {}
+}
