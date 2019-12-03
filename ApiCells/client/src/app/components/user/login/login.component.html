@@ -1,0 +1,22 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <form #formLogin="ngForm" (ngSubmit)="onLogin()">
+                            <h3>Iniciar Sesion</h3>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email" requiered [(ngModel)]="user.email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" requiered [(ngModel)]="user.password">
+                            </div>
+                            <button type="submit" class="btn-lg btn-block btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

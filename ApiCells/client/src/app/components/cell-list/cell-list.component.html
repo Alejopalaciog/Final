@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col">
+        <!--a type="button" href="/save" class="btn btn-primary">Nuevo celular</a-->
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>N</th>
+                    <th>Nombre</th>
+                    <th>Empresa</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cell of cells;  index as i">
+                    <th>{{i+1}}</th>
+                    <td>{{cell.name}}</td>
+                    <td>{{cell.manufacturerCompany}}</td>
+                    <td>{{cell.price}}$</td>
+                    <a type="button" class="btn btn-primary" (click)="onPreUpdate(cell)">Actualizar</a>
+                    <a type="button" class="btn btn-danger" (click)="onDelete(cell)">Eliminar</a>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<app-save></app-save>

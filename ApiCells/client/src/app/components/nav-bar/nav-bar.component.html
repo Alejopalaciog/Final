@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" routerLink="/">Cellphone Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active" *ngIf="logged">
+                <a class="nav-link btn btn-default" routerLink="/cell-list">Listado de celulares</a>
+            </li>
+            <li class="nav-item active" *ngIf="!logged">
+                <a class="nav-link btn btn-default" routerLink="/login">Iniciar sesion </a>
+            </li>
+            <li class="nav-item active" *ngIf="!logged">
+                <a class="nav-link btn btn-default" routerLink="/register">Registrar</a>
+            </li>
+            <li class="nav-item active" *ngIf="logged">
+                <a class="nav-link btn btn-default" (click)="onLogout()" href="#">Cerrar sesion</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

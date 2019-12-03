@@ -1,0 +1,80 @@
+<div class="alert alert-dark" role="alert">
+    Guardar celular
+</div>
+<form class="container" #formCell="ngForm" (ngSubmit)="onSave(formCell)">
+    <div class="form-group ">
+        <input type="text" class="form-control" id="cellId" name="cellId" placeholder="Id" [(ngModel)]="this.apiService.cellPublic.id" disabled>
+    </div>
+    <div class="form-group ">
+        <label for="">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" [(ngModel)]="this.apiService.cellPublic.name" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Empresa Fabricante</label>
+        <input type="text" class="form-control" id="manufacturerCompany" name="manufacturerCompany" placeholder="Empresa Fabricante" [(ngModel)]="this.apiService.cellPublic.manufacturerCompany" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Pantalla</label>
+        <input type="text" class="form-control" id="screen" name="screen" placeholder="Pantalla" [(ngModel)]="this.apiService.cellPublic.screen" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Procesador</label>
+        <input type="text" class="form-control" id="processor" name="processor" placeholder="Prosesador" [(ngModel)]="this.apiService.cellPublic.processor" required>
+    </div>
+    <div class="form-group ">
+        <label for="">RAM</label>
+        <input type="text" class="form-control" id="ram" name="ram" placeholder="ram" [(ngModel)]="this.apiService.cellPublic.ram" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Almacenamiento</label>
+        <input type="text" class="form-control" id="storage" name="storage" placeholder="Almacenamiento" [(ngModel)]="this.apiService.cellPublic.storage" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Sistema operativo</label>
+        <input type="text" class="form-control" id="os" name="os" placeholder="Sistema Operativo" [(ngModel)]="this.apiService.cellPublic.os" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Caracteristicas de camara</label>
+        <input type="text" class="form-control" id="cameraCharacteristics" name="cameraCharacteristics" placeholder="Caracteristicas de camara" [(ngModel)]="this.apiService.cellPublic.cameraCharacteristics" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Cantidad de camaras</label>
+        <input type="text" class="form-control" id="quantityCamera" name="quantityCamera" placeholder="Cantidad de camaras" [(ngModel)]="this.apiService.cellPublic.quantityCamera" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Bateria</label>
+        <input type="text" class="form-control" id="battery" name="battery" placeholder="Bateria" [(ngModel)]="this.apiService.cellPublic.battery" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Peso</label>
+        <input type="text" class="form-control" id="weight" name="weight" placeholder="Peso" [(ngModel)]="this.apiService.cellPublic.weight" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Precio</label>
+        <input type="text" class="form-control" id="price" name="price" placeholder="Precio" [(ngModel)]="this.apiService.cellPublic.price" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Color</label>
+        <input type="text" class="form-control" id="color" name="color" placeholder="Color" [(ngModel)]="this.apiService.cellPublic.color" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Sonido</label>
+        <input type="text" class="form-control" id="sound" name="sound" placeholder="Sonido" [(ngModel)]="this.apiService.cellPublic.sound" required>
+    </div>
+    <div class="form-group ">
+        <label for="">Link imagen</label>
+        <input type="text" class="form-control" id="image" name="image" placeholder="Link imagen" [(ngModel)]="this.apiService.cellPublic.image" required>
+    </div>
+    <!--div class="form-group ">
+        <label for="">Escondido?</label>
+        <select name="hide" id="hide" class="form-control" [(ngModel)]="this.apiService.cellPublic.hide">
+            <option value="1">Si</option>
+            <option value="0">No</option>
+        </select>
+    </div-->
+    <div class="form-group ">
+        <input type="hidden" class="form-control" id="hide" name="hide" [(ngModel)]="this.apiService.cellPublic.hide" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary float-right">Confirmar</button>
+</form>

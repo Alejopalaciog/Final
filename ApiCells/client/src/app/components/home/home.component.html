@@ -1,0 +1,26 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="card" *ngFor="let cell of cells">
+                <div class="card-body">
+                    <p>
+                        <img class="imagen img-fluid" src="{{cell.image}}">
+                    </p>
+                    <h3 class="card-tittle">{{cell.name}}</h3>
+                    <p class="card-text">Empresa: {{cell.manufacturerCompany}} </p>
+                    <p class="card-text">Pantalla: {{cell.screen}} </p>
+                    <p class="card-text">OS: {{cell.os}} </p>
+                    <p class="card-text">RAM: {{cell.ram}} </p>
+                    <p class="card-text">Almacenamiento: {{cell.storage}} </p>
+                    <p class="card-text">Procesador: {{cell.processor}} </p>
+                    <p class="card-text">Camara: {{cell.cameraCharacteristics}} </p>
+                    <p class="card-text">Cantidad camaras: {{cell.quantityCamera}} </p>
+                    <p class="card-text">Bateria: {{cell.battery}} </p>
+                    <p class="card-text">Peso: {{cell.weight}} </p>
+                    <p class="card-text">Precio: {{cell.price}} </p>
+                    <p class="card-text">Sonido: {{cell.sound}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+export interface cellInterface{
+    id?:string;
+    name?:string;
+    manufacturerCompany?:string;
+    screen?:string;
+    processor?:string;
+    ram?:string;
+    storage?:string;
+    os?:string;
+    cameraCharacteristics?:string;
+    quantityCamera?:string;
+    battery?:string;
+    weight?:string;
+    price?:string;
+    color?:string;
+    sound?:string;
+    image?:string;
+    hide?:string;
+}
