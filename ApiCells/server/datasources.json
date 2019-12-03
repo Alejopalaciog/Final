@@ -1,17 +1,17 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  },
-  "mongodb": {
-    "host": "",
-    "port": 0,
-    "url": "mongodb+srv://alejo:bm4bc76l@apidb-jpjx1.mongodb.net/test?retryWrites=true&w=majority",
-    "database": "apidb",
-    "password": "bm4bc76l",
-    "name": "mongodb",
-    "user": "alejo",
-    "useNewUrlParser": true,
-    "connector": "mongodb"
-  }
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "mongodb": {
+        "host": "",
+        "port": 0,
+        "url": "mongodb+srv://alejo:bm4bc76l@apidb-jpjx1.mongodb.net/test?retryWrites=true&w=majority",
+        "database": "apidb",
+        "password": "bm4bc76l",
+        "name": "mongodb",
+        "user": "alejo",
+        "useNewUrlParser": true,
+        "connector": "mongodb"
+    }
 }

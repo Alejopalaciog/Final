@@ -62,6 +62,14 @@
         "sound": {
             "type": "string",
             "required": true
+        },
+        "image": {
+            "type": "string",
+            "required": true
+        },
+        "hide": {
+            "type": "string",
+            "required": true
         }
     },
     "validations": [],
@@ -69,7 +77,7 @@
     "acls": [{
             "accessType": "*",
             "principalType": "ROLE",
-            "principalId": "$unauthenticated",
+            "principalId": "$authenticated",
             "permission": "ALLOW"
         },
         {
