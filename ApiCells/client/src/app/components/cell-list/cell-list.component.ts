@@ -26,7 +26,6 @@ export class CellListComponent implements OnInit {
     cell.hide="1";
     this.apiService.deleteCellphone(cell)
       .subscribe(cell => location.reload());
-    console.log(cell);
   }
 
   onPreUpdate(cell: cellInterface):void{

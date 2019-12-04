@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { UserService } from './../../service/user.service';
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService,private location:Location) { }
   public logged: boolean;
   ngOnInit() {
     this.checkLogin();
@@ -17,6 +17,7 @@ export class NavBarComponent implements OnInit {
   
   onLogout(): void{
     this.userService.logoutUser();
+    location.reload();
   }
   checkLogin():void{
     if(this.userService.getCurrentUser()==null){

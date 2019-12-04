@@ -3,7 +3,6 @@ import { UserService } from './../../../service/user.service';
 import { ApiService } from './../../../service/api.service';
 import { Component, OnInit } from '@angular/core';
 import { userInterface } from 'src/app/interface/user-interface';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -23,8 +22,8 @@ export class LoginComponent implements OnInit {
     .subscribe(data => {
       this.userService.setUser(data.user);
       let token = data.id;
-      this.userService.setToken(token);
-      this.router.navigate(["/"]);
+      this.userService.setToken(token);  
+      this.router.navigate(["/cell-list"]);       
     },
     failed => console.log(failed)
     )

@@ -40,8 +40,7 @@ export class SaveComponent implements OnInit {
       .subscribe(cell => location.reload());
     }else{
       this.apiService.updateCellphone(cellForm.value)
-      .subscribe(cell => location.reload());
-      console.log(cellForm.value);
+      .subscribe(cell => location.reload());     
     }
   }
 

@@ -41,15 +41,10 @@ export class ApiService {
     const url = "http://localhost:3000/api/cellphones?filter[where][hide]=0";
     return this.http.get(url);
   }
-
-  getCellphoneById(id: string){
-    const url="http://localhost:3000/api/cellphones/${id}";
-    return this.cell = this.http.get(url);
-  }
   
   newCellphone(cell: cellInterface){
     const token = this.userService.getToken();
-    const url=`http://localhost:3000/api/cellphones`;
+    const url=`http://localhost:3000/api/cellphones/?access_token=${token}`;
     return this.http.post<cellInterface>(url,cell,{headers: this.headers})
     .pipe(map(data=>data));
   }
