@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  constructor(private dataApi: ApiService) { }
+  constructor(public dataApi: ApiService) { }
+
   private cells: cellInterface;
   ngOnInit(){
     this.getListCells();

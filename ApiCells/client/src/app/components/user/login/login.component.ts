@@ -25,8 +25,8 @@ export class LoginComponent implements OnInit {
       this.userService.setToken(token);  
       this.router.navigate(["/cell-list"]);       
     },
-    failed => console.log(failed)
-    )
+    failed => this.router.navigate(["/login"])); 
+    
   }
 
 }

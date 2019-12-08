@@ -3,7 +3,7 @@
 </div>
 <form class="container" #formCell="ngForm" (ngSubmit)="onSave(formCell)">
     <div class="form-group ">
-        <input type="hidden" class="form-control" id="cellId" name="cellId" placeholder="Id" [(ngModel)]="this.apiService.cellPublic.id">
+        <input type="text" class="form-control" id="cellId" name="cellId" placeholder="Id" [(ngModel)]="this.apiService.cellPublic.id">
     </div>
     <div class="form-group ">
         <label for="">Nombre</label>
