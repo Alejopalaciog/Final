@@ -9,30 +9,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './save.component.html',
   styleUrls: ['./save.component.css']
 })
-export class SaveComponent implements OnInit {
+export class SaveComponent {
 
   constructor(private apiService: ApiService, private router: Router) { }
-  private cell: cellInterface={
-    id: null,
-    name:"",
-    manufacturerCompany:"",
-    screen:"",
-    processor:"",
-    ram:"",
-    storage:"",
-    os:"",
-    cameraCharacteristics:"",
-    quantityCamera:"",
-    battery:"",
-    weight:"",
-    price:"",
-    color:"",
-    sound:"",
-    image:"",
-    hide:"1"
-  }
-  ngOnInit() {
-  }
+  
   onSave(cellForm: NgForm):void{
     
     if(cellForm.value.cellId == null){

@@ -11,7 +11,6 @@ export class NavBarComponent implements OnInit {
 
   constructor(private userService: UserService,private location:Location) { }
   public logged: boolean;
-  title='Cellphone Shop';
   ngOnInit() {
     this.checkLogin();
   }

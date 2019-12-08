@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './jumbotron.component.html',
   styleUrls: ['./jumbotron.component.css']
 })
-export class JumbotronComponent implements OnInit {
+export class JumbotronComponent{
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

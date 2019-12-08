@@ -8,14 +8,12 @@ import { userInterface } from 'src/app/interface/user-interface';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   constructor(private userService: UserService, private router: Router) { }
   private user: userInterface = {
     email:"",
     password:""
-  }
-  ngOnInit() {
   }
   onLogin(){
     return  this.userService.loginUser(this.user.email, this.user.password)
